@@ -1,0 +1,1074 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] build-tools                                                        [jar]
+[INFO] root                                                               [pom]
+[INFO] microservice-webapp                                                [jar]
+[INFO] account-microservice                                               [jar]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for root 1.0:
+[INFO]
+[INFO] build-tools ........................................ SKIPPED
+[INFO] root ............................................... SKIPPED
+[INFO] microservice-webapp ................................ SKIPPED
+[INFO] account-microservice ............................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.164 s
+[INFO] Finished at: 2020-02-15T02:26:07+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] No goals have been specified for this build. You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/NoGoalSpecifiedException
+
+C:\Projects\bank-services>c:\Java\apache-maven-3.6.3\bin\mvn
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] build-tools                                                        [jar]
+[INFO] root                                                               [pom]
+[INFO] microservice-webapp                                                [jar]
+[INFO] account-microservice                                               [jar]
+[INFO]
+[INFO] -------------< com.github.edwgiz.sample.bank:build-tools >--------------
+[INFO] Building build-tools 1.0                                           [1/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ build-tools ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ build-tools ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Projects\bank-services\build-tools\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ build-tools ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Projects\bank-services\build-tools\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ build-tools ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ build-tools ---
+[INFO] No tests to run.
+[INFO]
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ build-tools ---
+[INFO] Building jar: C:\Projects\bank-services\build-tools\target\build-tools-1.0.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ build-tools ---
+[INFO] Installing C:\Projects\bank-services\build-tools\target\build-tools-1.0.jar to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\build-tools\1.0\build-tools-1.0.jar
+[INFO] Installing C:\Projects\bank-services\build-tools\pom.xml to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\build-tools\1.0\build-tools-1.0.pom
+[INFO]
+[INFO] -----------------< com.github.edwgiz.sample.bank:root >-----------------
+[INFO] Building root 1.0                                                  [2/4]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ root ---
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ root >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ root ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ root <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ root ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ root >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ root ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ root <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ root ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ root ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ root ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\target\\jacoco.exec,excludes=null
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:report (report) @ root ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:check (default-jacoco-check) @ root ---
+[INFO] Skipping JaCoCo execution due to missing execution data file:C:\Projects\bank-services\target\jacoco.exec
+[INFO]
+[INFO] >>> maven-dependency-plugin:3.1.1:analyze (analyze) > test-compile @ root >>>
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ root >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ root ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ root <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ root ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ root >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ root ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ root <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ root ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ root ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ root ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\target\\jacoco.exec,excludes=null
+[INFO]
+[INFO] <<< maven-dependency-plugin:3.1.1:analyze (analyze) < test-compile @ root <<<
+[INFO]
+[INFO]
+[INFO] --- maven-dependency-plugin:3.1.1:analyze (analyze) @ root ---
+[INFO] Skipping pom project
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ root ---
+[INFO] Installing C:\Projects\bank-services\pom.xml to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\root\1.0\root-1.0.pom
+[INFO]
+[INFO] ---------< com.github.edwgiz.sample.bank:microservice-webapp >----------
+[INFO] Building microservice-webapp 1.0                                   [3/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ microservice-webapp ---
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ microservice-webapp >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ microservice-webapp ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ microservice-webapp <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ microservice-webapp ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ microservice-webapp >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ microservice-webapp ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ microservice-webapp <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ microservice-webapp ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ microservice-webapp ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ microservice-webapp ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\microservice-webapp\\target\\jacoco.exec,excludes=null
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ microservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ microservice-webapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to C:\Projects\bank-services\microservice-webapp\target\classes
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/main/java/com/github/edwgiz/sample/bank/core/webapp/LocalDateTimeParamConverterProvider.java: C:\Projects\bank-services\microservice-webapp\src\main\java\com\github\edwgiz\sample\bank\core\webapp\LocalDateTimeParamConverterProvider.java uses unchecked or unsafe operations.
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/main/java/com/github/edwgiz/sample/bank/core/webapp/LocalDateTimeParamConverterProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ microservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ microservice-webapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to C:\Projects\bank-services\microservice-webapp\target\test-classes
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/test/java/com/github/edwgiz/sample/bank/core/webapp/commons/JooqAwareValidationUtilsTest.java: C:\Projects\bank-services\microservice-webapp\src\test\java\com\github\edwgiz\sample\bank\core\webapp\commons\JooqAwareValidationUtilsTest.java uses unchecked or unsafe operations.
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/test/java/com/github/edwgiz/sample/bank/core/webapp/commons/JooqAwareValidationUtilsTest.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ microservice-webapp ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.edwgiz.sample.bank.core.storage.DSLContextFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.901 s - in com.github.edwgiz.sample.bank.core.storage.DSLContextFactoryTest
+[INFO] Running com.github.edwgiz.sample.bank.core.storage.InMemoryDataSourceFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.425 s - in com.github.edwgiz.sample.bank.core.storage.InMemoryDataSourceFactoryTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.commons.JooqAwareValidationUtilsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.723 s - in com.github.edwgiz.sample.bank.core.webapp.commons.JooqAwareValidationUtilsTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHookTest
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Error
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Error
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Error
+[test hook] ERROR com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHook - test hook
+java.lang.Exception
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in com.github.edwgiz.sample.bank.core.webapp.commons.ShutdownHookTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.commons.ValidationUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s - in com.github.edwgiz.sample.bank.core.webapp.commons.ValidationUtilsTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest
+[main] WARN com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandler - Shutdown HTTP server - cancelled
+TIMED_WAITING
+[pool-2-thread-1] WARN com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandler - Shutdown HTTP server - interrupted
+java.lang.InterruptedException
+        at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1081)
+        at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1369)
+        at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:278)
+        at com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandler.await(HttpServerCompletionHandler.java:56)
+        at com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest.lambda$testInterrupt$0(HttpServerCompletionHandlerTest.java:37)
+        at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+        at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+        at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+        at java.base/java.lang.Thread.run(Thread.java:834)
+[main] WARN com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandler - Shutdown HTTP server - updated
+[main] ERROR com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandler - Shutdown HTTP server - failed
+java.lang.Throwable: on failed test throwable instance
+        at com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest.lambda$testOnFailed$2(HttpServerCompletionHandlerTest.java:78)
+        at com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest.testAwait(HttpServerCompletionHandlerTest.java:104)
+        at com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest.testOnFailed(HttpServerCompletionHandlerTest.java:77)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+        at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:127)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+        at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.316 s - in com.github.edwgiz.sample.bank.core.webapp.HttpServerCompletionHandlerTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.JaxRsApplicationFactoryTest
+[main] INFO org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 6.2.2 by Redgate
+[main] WARN org.flywaydb.core.internal.scanner.classpath.ClassPathScanner - Unable to resolve location classpath:db/migration
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 0 migrations (execution time 00:00.022s)
+[main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[main] WARN org.flywaydb.core.internal.scanner.classpath.ClassPathScanner - Unable to resolve location classpath:db/migration
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 0 migrations (execution time 00:00.007s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.487 s - in com.github.edwgiz.sample.bank.core.webapp.JaxRsApplicationFactoryTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.LocalDateTimeParamConverterProviderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.edwgiz.sample.bank.core.webapp.LocalDateTimeParamConverterProviderTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.ThrowableExceptionMapperTest
+[main] ERROR com.github.edwgiz.sample.bank.core.webapp.ThrowableExceptionMapper - Caught WebApplicationException with a body.
+javax.ws.rs.WebApplicationException: test1
+        at com.github.edwgiz.sample.bank.core.webapp.ThrowableExceptionMapperTest.testWebApplicationException(ThrowableExceptionMapperTest.java:46)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+        at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:686)
+        at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+        at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+        at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+        at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:205)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:201)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:137)
+        at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:71)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:135)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+        at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+        at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+        at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+        at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+        at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248)
+        at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211)
+        at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199)
+        at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+        at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:127)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+        at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+        at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.074 s - in com.github.edwgiz.sample.bank.core.webapp.ThrowableExceptionMapperTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.WebAppBaseTest
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebAppBase - Start server...
+[main] ERROR com.github.edwgiz.sample.bank.core.webapp.WebAppBase - null
+java.lang.ExceptionInInitializerError
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebAppBase - Start server...
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebAppBase - Start server - done in 0.0 secs
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.438 s - in com.github.edwgiz.sample.bank.core.webapp.WebAppBaseTest
+[INFO] Running com.github.edwgiz.sample.bank.core.webapp.WebServerTest
+[main] ERROR com.github.edwgiz.sample.bank.core.webapp.WebServer - Start server - failed
+java.io.IOException
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebServer - Shutdown HTTP server initiated...
+[main] WARN com.github.edwgiz.sample.bank.core.webapp.WebServer - Shutdown HTTP server - forced exit
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebServer - Shutdown HTTP server initiated...
+[main] INFO com.github.edwgiz.sample.bank.core.webapp.WebServer - Shutdown HTTP server - completed
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.826 s - in com.github.edwgiz.sample.bank.core.webapp.WebServerTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:report (report) @ microservice-webapp ---
+[INFO] Loading execution data file C:\Projects\bank-services\microservice-webapp\target\jacoco.exec
+[INFO] Analyzed bundle 'microservice-webapp' with 13 classes
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:check (default-jacoco-check) @ microservice-webapp ---
+[INFO] Loading execution data file C:\Projects\bank-services\microservice-webapp\target\jacoco.exec
+[INFO] Analyzed bundle 'microservice-webapp' with 13 classes
+[INFO] All coverage checks have been met.
+[INFO]
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ microservice-webapp ---
+[INFO] Building jar: C:\Projects\bank-services\microservice-webapp\target\microservice-webapp-1.0.jar
+[INFO]
+[INFO] >>> maven-dependency-plugin:3.1.1:analyze (analyze) > test-compile @ microservice-webapp >>>
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ microservice-webapp >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ microservice-webapp ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ microservice-webapp <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ microservice-webapp ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ microservice-webapp >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ microservice-webapp ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ microservice-webapp <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ microservice-webapp ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ microservice-webapp ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ microservice-webapp ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\microservice-webapp\\target\\jacoco.exec,excludes=null
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ microservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 9 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ microservice-webapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to C:\Projects\bank-services\microservice-webapp\target\classes
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/main/java/com/github/edwgiz/sample/bank/core/webapp/LocalDateTimeParamConverterProvider.java: C:\Projects\bank-services\microservice-webapp\src\main\java\com\github\edwgiz\sample\bank\core\webapp\LocalDateTimeParamConverterProvider.java uses unchecked or unsafe operations.
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/main/java/com/github/edwgiz/sample/bank/core/webapp/LocalDateTimeParamConverterProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ microservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ microservice-webapp ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to C:\Projects\bank-services\microservice-webapp\target\test-classes
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/test/java/com/github/edwgiz/sample/bank/core/webapp/commons/JooqAwareValidationUtilsTest.java: C:\Projects\bank-services\microservice-webapp\src\test\java\com\github\edwgiz\sample\bank\core\webapp\commons\JooqAwareValidationUtilsTest.java uses unchecked or unsafe operations.
+[INFO] /C:/Projects/bank-services/microservice-webapp/src/test/java/com/github/edwgiz/sample/bank/core/webapp/commons/JooqAwareValidationUtilsTest.java: Recompile with -Xlint:unchecked for details.
+[INFO]
+[INFO] <<< maven-dependency-plugin:3.1.1:analyze (analyze) < test-compile @ microservice-webapp <<<
+[INFO]
+[INFO]
+[INFO] --- maven-dependency-plugin:3.1.1:analyze (analyze) @ microservice-webapp ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ microservice-webapp ---
+[INFO] Installing C:\Projects\bank-services\microservice-webapp\target\microservice-webapp-1.0.jar to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\microservice-webapp\1.0\microservice-webapp-1.0.jar
+[INFO] Installing C:\Projects\bank-services\microservice-webapp\pom.xml to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\microservice-webapp\1.0\microservice-webapp-1.0.pom
+[INFO]
+[INFO] ---------< com.github.edwgiz.sample.bank:account-microservice >---------
+[INFO] Building account-microservice 1.0                                  [4/4]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ account-microservice ---
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ account-microservice >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ account-microservice ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ account-microservice <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ account-microservice ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ account-microservice >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ account-microservice ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ account-microservice <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ account-microservice ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ account-microservice ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ account-microservice ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\account-microservice\\target\\jacoco.exec,excludes=com/github/edwgiz/sample/bank/account/jooq/**
+[INFO]
+[INFO] --- flyway-maven-plugin:6.2.2:migrate (create-database) @ account-microservice ---
+[INFO] Flyway Community Edition 6.2.2 by Redgate
+[INFO] Database: jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app (H2 1.4)
+[INFO] Successfully validated 1 migration (execution time 00:00.014s)
+[INFO] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+[INFO] Current version of schema "PUBLIC": << Empty Schema >>
+[INFO] Migrating schema "PUBLIC" to version 1 - create schema
+[INFO] Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.053s)
+[INFO]
+[INFO] --- jooq-codegen-maven:3.12.4:generate (jooq-codegen) @ account-microservice ---
+[INFO] Database                 : Inferring driver org.h2.Driver from URL jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app;DB_CLOSE_DELAY=0
+[INFO] No <inputCatalog/> was provided. Generating ALL available catalogs instead.
+[INFO] License parameters
+[INFO] ----------------------------------------------------------
+[INFO]   Thank you for using jOOQ and jOOQ's code generator
+[INFO]
+[INFO] Database parameters
+[INFO] ----------------------------------------------------------
+[INFO]   dialect                : H2
+[INFO]   URL                    : jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app
+[INFO]   target dir             : C:\Projects\bank-services\account-microservice\src\generated\java
+[INFO]   target package         : com.github.edwgiz.sample.bank.account.jooq
+[INFO]   includes               : [.*]
+[INFO]   excludes               : [PUBLIC.flyway_schema_history]
+[INFO]   includeExcludeColumns  : false
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] JavaGenerator parameters
+[INFO] ----------------------------------------------------------
+[INFO]   annotations (generated): false
+[INFO]   annotations (JPA: any) : false
+[INFO]   annotations (JPA: version):
+[INFO]   annotations (validation): true
+[INFO]   comments               : true
+[INFO]   comments on attributes : true
+[INFO]   comments on catalogs   : true
+[INFO]   comments on columns    : true
+[INFO]   comments on keys       : true
+[INFO]   comments on links      : true
+[INFO]   comments on packages   : true
+[INFO]   comments on parameters : true
+[INFO]   comments on queues     : true
+[INFO]   comments on routines   : true
+[INFO]   comments on schemas    : true
+[INFO]   comments on sequences  : true
+[INFO]   comments on tables     : true
+[INFO]   comments on udts       : true
+[INFO]   daos                   : false
+[INFO]   deprecated code        : true
+[INFO]   global references (any): true
+[INFO]   global references (catalogs): true
+[INFO]   global references (keys): false
+[INFO]   global references (links): true
+[INFO]   global references (queues): true
+[INFO]   global references (routines): true
+[INFO]   global references (schemas): true
+[INFO]   global references (sequences): true
+[INFO]   global references (tables): true
+[INFO]   global references (udts): true
+[INFO]   indexes                : true
+[INFO]   instance fields        : true
+[INFO]   interfaces             : true
+[INFO]   interfaces (immutable) : true
+[INFO]   javadoc                : true
+[INFO]   keys                   : false
+[INFO]   links                  : true
+[INFO]   pojos                  : true
+[INFO]   pojos (immutable)      : false
+[INFO]   queues                 : true
+[INFO]   records                : false
+[INFO]   routines               : true
+[INFO]   sequences              : true
+[INFO]   table-valued functions : true
+[INFO]   tables                 : true
+[INFO]   udts                   : true
+[INFO]   relations              : true (forced to true because of <tables/>)
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] Generation remarks
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] ----------------------------------------------------------
+[INFO] Generating catalogs      : Total: 1
+[INFO]
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.12.4
+
+[INFO] ARRAYs excluded
+[INFO] Enums fetched            : 0 (0 included, 0 excluded)
+[INFO] Packages excluded
+[INFO] Routines excluded
+[INFO] Sequences fetched        : 0 (0 included, 0 excluded)
+[INFO] Tables fetched           : 3 (2 included, 1 excluded)
+[INFO] No schema version is applied for catalog . Regenerating.
+[INFO]
+[INFO] Generating catalog       : DefaultCatalog.java
+[INFO] ==========================================================
+[INFO] Generating schemata      : Total: 1
+[INFO] No schema version is applied for schema PUBLIC. Regenerating.
+[INFO] Generating schema        : Public.java
+[INFO] ----------------------------------------------------------
+[INFO] UDTs excluded
+[INFO] Generating tables
+[INFO] Generating table         : Account.java [input=ACCOUNT, output=ACCOUNT, pk=N/A]
+[INFO] Embeddables fetched      : 0 (0 included, 0 excluded)
+[INFO] Indexes excluded
+[INFO] Generating table         : Payment.java [input=PAYMENT, output=PAYMENT, pk=N/A]
+[INFO] Tables generated         : Total: 905.113ms
+[INFO] Generating table POJOs
+[INFO] Generating POJO          : Account.java
+[INFO] Generating POJO          : Payment.java
+[INFO] Table POJOs generated    : Total: 927.104ms, +21.991ms
+[INFO] Generating table references
+[INFO] Table refs generated     : Total: 935.177ms, +8.073ms
+[INFO] Generating Indexes
+[INFO] Skipping empty indexes
+[INFO] Generating table interfaces
+[INFO] Generating interface     : IAccount.java
+[INFO] Generating interface     : IPayment.java
+[INFO] Table interfaces generated: Total: 964.174ms, +28.996ms
+[INFO] Domains fetched          : 0 (0 included, 0 excluded)
+[INFO] Generation finished: PUBLIC: Total: 973.155ms, +8.981ms
+[INFO]
+[INFO] Removing excess files
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (default) @ account-microservice ---
+[INFO] Source directory: C:\Projects\bank-services\account-microservice\generated added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ account-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ account-microservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to C:\Projects\bank-services\account-microservice\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ account-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ account-microservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to C:\Projects\bank-services\account-microservice\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:3.0.0-M4:test (default-test) @ account-microservice ---
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.edwgiz.sample.bank.account.model.NewAccountTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.04 s - in com.github.edwgiz.sample.bank.account.model.NewAccountTest
+[INFO] Running com.github.edwgiz.sample.bank.account.model.NewPaymentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in com.github.edwgiz.sample.bank.account.model.NewPaymentTest
+[INFO] Running com.github.edwgiz.sample.bank.account.webapp.AccountWebAppTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.441 s - in com.github.edwgiz.sample.bank.account.webapp.AccountWebAppTest
+[INFO] Running com.github.edwgiz.sample.bank.account.api.AccountEndpointTest
+Feb 15, 2020 2:27:47 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:47 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.license.VersionPrinter - Flyway Community Edition 6.2.2 by Redgate
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.028s)
+[main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1 - create schema
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "PUBLIC" (execution time 00:00.064s)
+[main] INFO org.jooq.Constants -
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@  @@@@  @@  @@    @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@    @@  @@  @@@@  @@@@@@@@@@
+@@@@@@@@@@        @@  @  @  @@@@@@@@@@
+@@@@@@@@@@        @@        @@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  Thank you for using jOOQ 3.12.4
+
+Feb 15, 2020 2:27:48 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:48 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.007s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.AccountEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.485 s - in com.github.edwgiz.sample.bank.account.api.AccountEndpointTest
+[INFO] Running com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:49 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.006s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.004s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer <init>
+INFO: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+Feb 15, 2020 2:27:51 AM org.glassfish.jersey.internal.inject.Providers checkProviderRuntime
+WARNING: A provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest registered in SERVER runtime does not implement any provider interfaces applicable in the SERVER runtime. Due to constraint configuration problems the provider com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest will be ignored.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.003s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[main] INFO org.flywaydb.core.internal.database.DatabaseFactory - Database: jdbc:h2:mem:app (H2 1.4)
+[main] INFO org.flywaydb.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.002s)
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 1
+[main] INFO org.flywaydb.core.internal.command.DbMigrate - Schema "PUBLIC" is up to date. No migration necessary.
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.442 s - in com.github.edwgiz.sample.bank.account.api.PaymentEndpointTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:report (report) @ account-microservice ---
+[INFO] Loading execution data file C:\Projects\bank-services\account-microservice\target\jacoco.exec
+[INFO] Analyzed bundle 'account-microservice' with 6 classes
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:check (default-jacoco-check) @ account-microservice ---
+[INFO] Loading execution data file C:\Projects\bank-services\account-microservice\target\jacoco.exec
+[INFO] Analyzed bundle 'account-microservice' with 6 classes
+[INFO] All coverage checks have been met.
+[INFO]
+[INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ account-microservice ---
+[INFO] Building jar: C:\Projects\bank-services\account-microservice\target\account-microservice-1.0.jar
+[INFO]
+[INFO] >>> maven-dependency-plugin:3.1.1:analyze (analyze) > test-compile @ account-microservice >>>
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:check (validate) > :pmd @ account-microservice >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:pmd (pmd) @ account-microservice ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:check (validate) < :pmd @ account-microservice <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:check (validate) @ account-microservice ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] >>> maven-pmd-plugin:3.13.0:cpd-check (validate) > :cpd @ account-microservice >>>
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd (cpd) @ account-microservice ---
+[INFO]
+[INFO] <<< maven-pmd-plugin:3.13.0:cpd-check (validate) < :cpd @ account-microservice <<<
+[INFO]
+[INFO]
+[INFO] --- maven-pmd-plugin:3.13.0:cpd-check (validate) @ account-microservice ---
+[INFO] PMD version: 6.21.0
+[INFO]
+[INFO]
+[INFO] --- maven-checkstyle-plugin:3.1.0:check (validate) @ account-microservice ---
+[INFO]
+[INFO] --- jacoco-maven-plugin:0.8.5:prepare-agent (default) @ account-microservice ---
+[INFO] argLine set to -javaagent:C:\\Users\\edwgiz\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.8.5\\org.jacoco.agent-0.8.5-runtime.jar=destfile=C:\\Projects\\bank-services\\account-microservice\\target\\jacoco.exec,excludes=com/github/edwgiz/sample/bank/account/jooq/**
+[INFO]
+[INFO] --- flyway-maven-plugin:6.2.2:migrate (create-database) @ account-microservice ---
+[INFO] Database: jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app (H2 1.4)
+[INFO] Successfully validated 1 migration (execution time 00:00.006s)
+[INFO] Current version of schema "PUBLIC": 1
+[INFO] Schema "PUBLIC" is up to date. No migration necessary.
+[INFO]
+[INFO] --- jooq-codegen-maven:3.12.4:generate (jooq-codegen) @ account-microservice ---
+[INFO] Database                 : Inferring driver org.h2.Driver from URL jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app;DB_CLOSE_DELAY=0
+[INFO] No <inputCatalog/> was provided. Generating ALL available catalogs instead.
+[INFO] License parameters
+[INFO] ----------------------------------------------------------
+[INFO]   Thank you for using jOOQ and jOOQ's code generator
+[INFO]
+[INFO] Database parameters
+[INFO] ----------------------------------------------------------
+[INFO]   dialect                : H2
+[INFO]   URL                    : jdbc:h2:file:C:\Projects\bank-services\account-microservice\target/database/app
+[INFO]   target dir             : C:\Projects\bank-services\account-microservice\src\generated\java
+[INFO]   target package         : com.github.edwgiz.sample.bank.account.jooq
+[INFO]   includes               : [.*]
+[INFO]   excludes               : [PUBLIC.flyway_schema_history]
+[INFO]   includeExcludeColumns  : false
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] JavaGenerator parameters
+[INFO] ----------------------------------------------------------
+[INFO]   annotations (generated): false
+[INFO]   annotations (JPA: any) : false
+[INFO]   annotations (JPA: version):
+[INFO]   annotations (validation): true
+[INFO]   comments               : true
+[INFO]   comments on attributes : true
+[INFO]   comments on catalogs   : true
+[INFO]   comments on columns    : true
+[INFO]   comments on keys       : true
+[INFO]   comments on links      : true
+[INFO]   comments on packages   : true
+[INFO]   comments on parameters : true
+[INFO]   comments on queues     : true
+[INFO]   comments on routines   : true
+[INFO]   comments on schemas    : true
+[INFO]   comments on sequences  : true
+[INFO]   comments on tables     : true
+[INFO]   comments on udts       : true
+[INFO]   daos                   : false
+[INFO]   deprecated code        : true
+[INFO]   global references (any): true
+[INFO]   global references (catalogs): true
+[INFO]   global references (keys): false
+[INFO]   global references (links): true
+[INFO]   global references (queues): true
+[INFO]   global references (routines): true
+[INFO]   global references (schemas): true
+[INFO]   global references (sequences): true
+[INFO]   global references (tables): true
+[INFO]   global references (udts): true
+[INFO]   indexes                : true
+[INFO]   instance fields        : true
+[INFO]   interfaces             : true
+[INFO]   interfaces (immutable) : true
+[INFO]   javadoc                : true
+[INFO]   keys                   : false
+[INFO]   links                  : true
+[INFO]   pojos                  : true
+[INFO]   pojos (immutable)      : false
+[INFO]   queues                 : true
+[INFO]   records                : false
+[INFO]   routines               : true
+[INFO]   sequences              : true
+[INFO]   table-valued functions : true
+[INFO]   tables                 : true
+[INFO]   udts                   : true
+[INFO]   relations              : true (forced to true because of <tables/>)
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] Generation remarks
+[INFO] ----------------------------------------------------------
+[INFO]
+[INFO] ----------------------------------------------------------
+[INFO] Generating catalogs      : Total: 1
+[INFO] ARRAYs excluded
+[INFO] Enums fetched            : 0 (0 included, 0 excluded)
+[INFO] Packages excluded
+[INFO] Routines excluded
+[INFO] Sequences fetched        : 0 (0 included, 0 excluded)
+[INFO] Tables fetched           : 3 (2 included, 1 excluded)
+[INFO] No schema version is applied for catalog . Regenerating.
+[INFO]
+[INFO] Generating catalog       : DefaultCatalog.java
+[INFO] ==========================================================
+[INFO] Generating schemata      : Total: 1
+[INFO] No schema version is applied for schema PUBLIC. Regenerating.
+[INFO] Generating schema        : Public.java
+[INFO] ----------------------------------------------------------
+[INFO] UDTs excluded
+[INFO] Generating tables
+[INFO] Generating table         : Account.java [input=ACCOUNT, output=ACCOUNT, pk=N/A]
+[INFO] Embeddables fetched      : 0 (0 included, 0 excluded)
+[INFO] Indexes excluded
+[INFO] Generating table         : Payment.java [input=PAYMENT, output=PAYMENT, pk=N/A]
+[INFO] Tables generated         : Total: 496.058ms
+[INFO] Generating table POJOs
+[INFO] Generating POJO          : Account.java
+[INFO] Generating POJO          : Payment.java
+[INFO] Table POJOs generated    : Total: 519.708ms, +23.65ms
+[INFO] Generating table references
+[INFO] Table refs generated     : Total: 524.81ms, +5.102ms
+[INFO] Generating Indexes
+[INFO] Skipping empty indexes
+[INFO] Generating table interfaces
+[INFO] Generating interface     : IAccount.java
+[INFO] Generating interface     : IPayment.java
+[INFO] Table interfaces generated: Total: 556.712ms, +31.902ms
+[INFO] Domains fetched          : 0 (0 included, 0 excluded)
+[INFO] Generation finished: PUBLIC: Total: 565.872ms, +9.16ms
+[INFO]
+[INFO] Removing excess files
+[INFO]
+[INFO] --- build-helper-maven-plugin:3.0.0:add-source (default) @ account-microservice ---
+[INFO] Source directory: C:\Projects\bank-services\account-microservice\generated added.
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ account-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ account-microservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to C:\Projects\bank-services\account-microservice\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ account-microservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO]
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ account-microservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to C:\Projects\bank-services\account-microservice\target\test-classes
+[INFO]
+[INFO] <<< maven-dependency-plugin:3.1.1:analyze (analyze) < test-compile @ account-microservice <<<
+[INFO]
+[INFO]
+[INFO] --- maven-dependency-plugin:3.1.1:analyze (analyze) @ account-microservice ---
+[INFO] No dependency problems found
+[INFO]
+[INFO] --- maven-shade-plugin:3.2.1:shade (default) @ account-microservice ---
+[INFO] Including com.github.edwgiz.sample.bank:microservice-webapp:jar:1.0 in the shaded jar.
+[INFO] Including org.glassfish.jersey.containers:jersey-container-grizzly2-http:jar:2.30 in the shaded jar.
+[INFO] Including org.glassfish.grizzly:grizzly-framework:jar:2.4.4 in the shaded jar.
+[INFO] Including org.glassfish.grizzly:grizzly-http-server:jar:2.4.4 in the shaded jar.
+[INFO] Including org.glassfish.grizzly:grizzly-http:jar:2.4.4 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-common:jar:2.30 in the shaded jar.
+[INFO] Including com.sun.activation:jakarta.activation:jar:1.2.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.inject:jersey-hk2:jar:2.30 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-locator:jar:2.6.1 in the shaded jar.
+[INFO] Including org.javassist:javassist:jar:3.25.0-GA in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-api:jar:2.6.1 in the shaded jar.
+[INFO] Including org.glassfish.hk2:hk2-utils:jar:2.6.1 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:aopalliance-repackaged:jar:2.6.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.10.2.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.2 in the shaded jar.
+[INFO] Including io.swagger.core.v3:swagger-jaxrs2:jar:2.1.1 in the shaded jar.
+[INFO] Including io.github.classgraph:classgraph:jar:4.6.32 in the shaded jar.
+[INFO] Including io.swagger.core.v3:swagger-models:jar:2.1.1 in the shaded jar.
+[INFO] Including io.swagger.core.v3:swagger-integration:jar:2.1.1 in the shaded jar.
+[INFO] Including io.swagger.core.v3:swagger-core:jar:2.1.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.10.1 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.24 in the shaded jar.
+[INFO] Including javax.servlet:servlet-api:jar:2.5 in the shaded jar.
+[INFO] Including org.glassfish.jaxb:jaxb-runtime:jar:2.3.2 in the shaded jar.
+[INFO] Including org.glassfish.jaxb:txw2:jar:2.3.2 in the shaded jar.
+[INFO] Including com.sun.istack:istack-commons-runtime:jar:3.0.8 in the shaded jar.
+[INFO] Including org.jvnet.staxex:stax-ex:jar:1.8.1 in the shaded jar.
+[INFO] Including com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16 in the shaded jar.
+[INFO] Including com.h2database:h2:jar:1.4.200 in the shaded jar.
+[INFO] Including org.flywaydb:flyway-core:jar:6.2.2 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-simple:jar:1.7.30 in the shaded jar.
+[INFO] Including org.slf4j:slf4j-api:jar:1.7.30 in the shaded jar.
+[INFO] Including org.slf4j:jul-to-slf4j:jar:1.7.30 in the shaded jar.
+[INFO] Including org.apache.commons:commons-lang3:jar:3.9 in the shaded jar.
+[INFO] Including org.glassfish.hk2.external:jakarta.inject:jar:2.6.1 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-server:jar:2.30 in the shaded jar.
+[INFO] Including org.glassfish.jersey.core:jersey-client:jar:2.30 in the shaded jar.
+[INFO] Including org.glassfish.jersey.media:jersey-media-jaxb:jar:2.30 in the shaded jar.
+[INFO] Including jakarta.annotation:jakarta.annotation-api:jar:1.3.5 in the shaded jar.
+[INFO] Including jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.2 in the shaded jar.
+[INFO] Including jakarta.validation:jakarta.validation-api:jar:2.0.2 in the shaded jar.
+[INFO] Including jakarta.ws.rs:jakarta.ws.rs-api:jar:2.1.6 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-databind:jar:2.10.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.10.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.core:jackson-core:jar:2.10.2 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.10.2.1 in the shaded jar.
+[INFO] Including com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.10.2 in the shaded jar.
+[INFO] Including io.swagger.core.v3:swagger-annotations:jar:2.1.1 in the shaded jar.
+[INFO] Including org.jooq:jooq:jar:3.12.4 in the shaded jar.
+[INFO] Including org.reactivestreams:reactive-streams:jar:1.0.2 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\Projects\bank-services\account-microservice\target\account-microservice-1.0.jar with C:\Projects\bank-services\account-microservice\target\account-microservice-1.0-shaded.jar
+[INFO]
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ account-microservice ---
+[INFO] Installing C:\Projects\bank-services\account-microservice\target\account-microservice-1.0.jar to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\account-microservice\1.0\account-microservice-1.0.jar
+[INFO] Installing C:\Projects\bank-services\account-microservice\pom.xml to C:\Users\edwgiz\.m2\repository\com\github\edwgiz\sample\bank\account-microservice\1.0\account-microservice-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for root 1.0:
+[INFO]
+[INFO] build-tools ........................................ SUCCESS [  1.192 s]
+[INFO] root ............................................... SUCCESS [  1.893 s]
+[INFO] microservice-webapp ................................ SUCCESS [ 19.775 s]
+[INFO] account-microservice ............................... SUCCESS [ 14.316 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  37.328 s
+[INFO] Finished at: 2020-02-15T02:27:56+03:00
+[INFO] ------------------------------------------------------------------------
