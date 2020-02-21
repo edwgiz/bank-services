@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.net.URI;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import static org.glassfish.grizzly.http.server.HttpHandlerRegistration.builder;
 
 final class WebServer {
 
@@ -42,11 +43,11 @@ final class WebServer {
     }
 
     /* default */void attachStaticContent(final HttpServer httpServer) {
-        final String staticContentPath = "/swagger-ui";
-        final CLStaticHttpHandler httpHandler = new CLStaticHttpHandler(getClass().getClassLoader(),
-                staticContentPath + '/');
+        final CLStaticHttpHandler httpHandler = new CLStaticHttpHandler(getClass().getClassLoader(), "/static/");
         httpHandler.setFileCacheEnabled(false);
-        httpServer.getServerConfiguration().addHttpHandler(httpHandler, staticContentPath);
+        httpServer.getServerConfiguration().addHttpHandler(httpHandler,
+                builder().urlPattern("/swagger-ui/*").build(),
+                builder().urlPattern("/openapi.json").build());
     }
 
     /* default */HttpServer createHttpServer(final ResourceConfig conf) {

@@ -80,20 +80,8 @@
 
 
         <dependency>
-            <groupId>io.swagger.core.v3</groupId>
-            <artifactId>swagger-jaxrs2</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish.jaxb</groupId>
-            <artifactId>jaxb-runtime</artifactId>
         </dependency>
 
         <dependency>
@@ -173,19 +161,23 @@
                     <ignoredUnusedDeclaredDependencies>
                         <!-- runtime -->
                         <ignoredUnusedDeclaredDependency>org.glassfish.jersey.inject:*</ignoredUnusedDeclaredDependency>
-                        <ignoredUnusedDeclaredDependency>javax.servlet:servlet-api</ignoredUnusedDeclaredDependency>
                         <ignoredUnusedDeclaredDependency>com.h2database:h2</ignoredUnusedDeclaredDependency>
-                        <ignoredUnusedDeclaredDependency>org.glassfish.jaxb:jaxb-runtime</ignoredUnusedDeclaredDependency>
                         <ignoredUnusedDeclaredDependency>org.slf4j:slf4j-simple</ignoredUnusedDeclaredDependency>
                         <ignoredUnusedDeclaredDependency>org.slf4j:log4j-over-slf4j</ignoredUnusedDeclaredDependency>
                         <!-- test-runtime -->
                         <ignoredUnusedDeclaredDependency>org.junit.jupiter:junit-jupiter-engine</ignoredUnusedDeclaredDependency>
                         <ignoredUnusedDeclaredDependency>org.mockito:mockito-junit-jupiter</ignoredUnusedDeclaredDependency>
-
-
                     </ignoredUnusedDeclaredDependencies>
                 </configuration>
 
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

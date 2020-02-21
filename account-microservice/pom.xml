@@ -15,9 +15,10 @@
 
 
     <properties>
-        <jooq.codegen.target.package>com.github.edwgiz.sample.bank.account.jooq</jooq.codegen.target.package>
+        <java.module.package>com.github.edwgiz.sample.bank.account</java.module.package>
+        <jooq.codegen.target.package>${java.module.package}.jooq</jooq.codegen.target.package>
         <jooq.codegen.target.packageAsPath>com/github/edwgiz/sample/bank/account/jooq/**</jooq.codegen.target.packageAsPath>
-        <shaded.mainClass>com.github.edwgiz.sample.bank.account.webapp.AccountWebApp</shaded.mainClass>
+        <shaded.mainClass>${java.module.package}.webapp.AccountWebApp</shaded.mainClass>
     </properties>
 
 
@@ -119,6 +120,15 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>io.swagger.core.v3</groupId>
+                <artifactId>swagger-maven-plugin</artifactId>
+                <configuration>
+                    <resourcePackages>
+                        <package>${java.module.package}</package>
+                    </resourcePackages>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

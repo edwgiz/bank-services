@@ -175,11 +175,6 @@
             </dependency>
 
             <dependency>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-jaxrs2</artifactId>
-                <version>2.1.1</version>
-            </dependency>
-            <dependency>
                 <groupId> org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.9</version>
@@ -208,24 +203,6 @@
                 <groupId>jakarta.xml.bind</groupId>
                 <artifactId>jakarta.xml.bind-api</artifactId>
                 <version>2.3.2</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>jakarta.activation</groupId>
-                        <artifactId>jakarta.activation-api</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency><!-- for the open-api swagger runtime generation -->
-                <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
-                <version>2.5</version>
-                <scope>runtime</scope>
-            </dependency>
-            <dependency><!-- for WADL swagger runtime generation -->
-                <groupId>org.glassfish.jaxb</groupId>
-                <artifactId>jaxb-runtime</artifactId>
-                <version>2.3.2</version>
-                <scope>runtime</scope>
                 <exclusions>
                     <exclusion>
                         <groupId>jakarta.activation</groupId>
@@ -524,6 +501,20 @@
                                 </sources>
                             </configuration>
                         </execution>
+                        <execution>
+                            <id>add-resource</id>
+                            <phase>generate-resources</phase>
+                            <goals>
+                                <goal>add-resource</goal>
+                            </goals>
+                            <configuration>
+                                <resources>
+                                    <resource>
+                                        <directory>src/generated/resources</directory>
+                                    </resource>
+                                </resources>
+                            </configuration>
+                        </execution>
                     </executions>
                 </plugin>
                 <plugin>
@@ -700,6 +691,26 @@
                     </configuration>
                 </plugin>
                 <plugin>
+                    <groupId>io.swagger.core.v3</groupId>
+                    <artifactId>swagger-maven-plugin</artifactId>
+                    <version>2.1.0</version>
+                    <executions>
+                        <execution>
+                            <phase>compile</phase>
+                            <goals>
+                                <goal>resolve</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <outputFileName>openapi</outputFileName>
+                        <outputFormat>JSON</outputFormat>
+                        <prettyPrint>false</prettyPrint>
+                        <outputPath>${project.basedir}/src/generated/resources/static</outputPath>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
                     <version>3.2.0</version>
@@ -725,6 +736,8 @@
                                             <exclude>META-INF/maven/**</exclude>
                                             <exclude>META-INF/NOTICE*</exclude>
                                             <exclude>META-INF/LICENSE*</exclude>
+                                            <exclude>META-INF/README*</exclude>
+                                            <exclude>META-INF/ABOUT*</exclude>
                                             <exclude>META-INF/*.SF</exclude>
                                             <exclude>META-INF/*.DSA</exclude>
                                             <exclude>META-INF/*.RSA</exclude>

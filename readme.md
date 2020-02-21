@@ -39,20 +39,21 @@ The code quality is controlled during the application build by next Maven plugin
 * Dependency plugin, assures all used dependencies are explicitly declared while unused. 
   dependencies are prohibited.  
 * Shade plugin assures there's no Java class interference by different dependencies.
-* Jacoco checks for a 100% unit test coverage, generation reports in 
+* Jacoco checks for a 100% unit test coverage, generating reports in 
   `account-microservice/target/jacoco-report/index.html`.
 
 Any issue caught by the above checks leads to Maven build failure.  
 
 ## Points to improve
 * The microservice architecture often requires distributed transaction support that can be
-  achieved with JTA framework supporting JAX-RS call chain.
+  achieved with JTA framework supporting JAX-RS call chain, for example Atomikos.
 * The H2 is used in-memory mode that's definitely should be changed for production. Also JDBC
   pool should be changed to HikariCP or analogous.  
 * Even though the given technology stack makes good balance between a simplicity of implementation,
   reliability, a performance and following of standards, for top-performance solutions may be 
   reasonable to skip some layers like Jackson and Jooq and to switch to more direct manipulation
   with a network via Netty channels and with a database via JDBC, or to apply some NoSQL database.
+* Message format may be changed from JSON to some binary variations, like Protobuf.  
 * If there's no necessity to expose Swagger-UI, the Jetty's underlying http server can be easily
   switched to Netty. 
 * Other code-quality tools, like FindBugs, can be added to the Maven build.
@@ -76,19 +77,6 @@ com.github.edwgiz.sample.bank:account-microservice:jar:1.0
 |  |  \- org.glassfish.hk2.external:aopalliance-repackaged:jar:2.6.1:compile
 |  +- com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.10.2.1:compile
 |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.10.2:compile
-|  +- io.swagger.core.v3:swagger-jaxrs2:jar:2.1.1:compile
-|  |  +- io.github.classgraph:classgraph:jar:4.6.32:compile
-|  |  +- io.swagger.core.v3:swagger-models:jar:2.1.1:compile
-|  |  \- io.swagger.core.v3:swagger-integration:jar:2.1.1:compile
-|  |     \- io.swagger.core.v3:swagger-core:jar:2.1.1:compile
-|  |        \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.10.1:compile
-|  |           \- org.yaml:snakeyaml:jar:1.24:compile
-|  +- javax.servlet:servlet-api:jar:2.5:runtime
-|  +- org.glassfish.jaxb:jaxb-runtime:jar:2.3.2:runtime
-|  |  +- org.glassfish.jaxb:txw2:jar:2.3.2:runtime
-|  |  +- com.sun.istack:istack-commons-runtime:jar:3.0.8:runtime
-|  |  +- org.jvnet.staxex:stax-ex:jar:1.8.1:runtime
-|  |  \- com.sun.xml.fastinfoset:FastInfoset:jar:1.2.16:runtime
 |  +- com.h2database:h2:jar:1.4.200:compile
 |  +- org.flywaydb:flyway-core:jar:6.2.2:compile
 |  +- org.slf4j:slf4j-simple:jar:1.7.30:runtime

@@ -6,7 +6,6 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
 import com.github.edwgiz.sample.bank.core.storage.DSLContextFactory;
 import com.github.edwgiz.sample.bank.core.storage.InMemoryDataSourceFactory;
-import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
 import org.glassfish.hk2.utilities.binding.AbstractBinder;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.jooq.DSLContext;
@@ -62,7 +61,6 @@ public class JaxRsApplicationFactory implements Supplier<ResourceConfig> {
         conf.register(jaxbJsonProvider);
 
         conf.register(new ThrowableExceptionMapper());
-        conf.register(OpenApiResource.class);
 
         return conf;
     }

@@ -15,6 +15,7 @@ import java.io.IOException;
 import static com.github.edwgiz.sample.bank.core.webapp.WebServer.SYSTEM_PROPERTY_HOSTNAME;
 import static com.github.edwgiz.sample.bank.core.webapp.WebServer.SYSTEM_PROPERTY_PORT;
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import static org.glassfish.grizzly.http.server.HttpHandlerRegistration.builder;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertSame;
@@ -88,7 +89,8 @@ class WebServerTest {
                     assertFalse(sch.isFileCacheEnabled());
                     assertEquals(WebServer.class.getClassLoader(), sch.getClassLoader());
                     return true;
-                }), eq("/swagger-ui"));
+                }), eq(builder().urlPattern("/swagger-ui/*").build()),
+                eq(builder().urlPattern("/openapi.json").build()));
     }
 
     @Test

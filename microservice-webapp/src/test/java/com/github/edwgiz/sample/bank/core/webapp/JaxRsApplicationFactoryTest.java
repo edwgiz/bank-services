@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
 import com.fasterxml.jackson.jaxrs.cfg.JaxRSFeature;
 import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
-import io.swagger.v3.jaxrs2.integration.resources.OpenApiResource;
 import org.glassfish.jersey.internal.inject.InjectionManager;
 import org.glassfish.jersey.server.ApplicationHandler;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -43,7 +42,6 @@ class JaxRsApplicationFactoryTest {
         Assertions.assertTrue(application.isRegistered(LocalDateTimeParamConverterProvider.class));
         testJacksonJaxbJsonProvider(injectionManager.getInstance(JacksonJaxbJsonProvider.class));
         Assertions.assertTrue(application.isRegistered(ThrowableExceptionMapper.class));
-        Assertions.assertTrue(application.isRegistered(OpenApiResource.class));
     }
 
     private void testJacksonJaxbJsonProvider(final JacksonJaxbJsonProvider jaxbProvider)
