@@ -144,7 +144,7 @@ Example to build a docker image from a command-line
 ```
 C:\Projects\bank-services\account-microservice>docker build -t account-microservice:1.0.0 .
 ```
-Resulting docker image size is around 75Mb
+Resulting docker image size is around 60Mb
 
 ### Performance test
 
